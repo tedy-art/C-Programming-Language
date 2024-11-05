@@ -5,7 +5,7 @@
 |SEC101| Problem Solving Techniques |3L:0T:4P |5 Credits|
 |------|----------------------------|---------|---------|
 
-**Course Objectives**
+**Course Objectives(CO)**
 
 **CO1:** Understand basic terminology of computers, problem solving, programming Languages and their evolution (Understand)
 
@@ -104,4 +104,95 @@ Problems And Problem Instances, Generalization and Special Cases, Types of Compu
 7) Debugging.
 
 ### <center>UNIT I: (CO-1, CO-2)</center>
-**1. Problems and Problem Instances :**
+#### 1. Problems and Problem Instances :
+* What is a Problem?
+- A problem refers to a general question or task that we want to solve 
+- I.e. In real world 
+    1) when we want to park our vehicle
+    2) when we want to start learning new things
+    3) when we solve any mathematical problem.
+- It's abstract and doesn't include specific data.
+
+* What is a Problem Instances?
+- A problem instance is a specific example of a problem, with all necessary details and data to work with.
+- i.e. `Sort[4, 2, 7, 1]` is an instance of the sorting problem.
+
+#### 2. Generalization and Special Cases:
+* What is Generalization?
+- Finding a broad solution that works for various cases of a problem, for example, an algorithm that sorts any array of numbers is generalized.
+
+* What is Special cases?
+- These are specific instances or conditions that simplify the general problem.
+- In sorting, a special case might be when the list is already sorted or contains only one element.
+
+#### 3. Types of Computational Problem:
+* What is decision problem?
+- Problems that yield a yes/no answer(e.g., "Is this number prime").
+
+* what is Optimization Problem?
+- Problems focused on finding the best solution, like finding the shortest path.
+
+* What is Search problem?
+- Finding a particular solution or item in dataset(e.g., finding a specific number in a list).
+
+#### 4. Classification of problem?
+* Problems are often classified by thier complexity and solvability:
+    1) **P Problems:(polynomial time Problems)**
+        - Problems that can be solved efficiently(In polynomial time).
+    
+    2) **NP Problems: (Nondeterministic polynomial time problem)**
+        - Problems for which a solution can verified quickly, but it may not be easy to find the solution.
+    
+    3) **NP-Hard/NP-Complete:**
+        - Problems that are at least as hard as NP problems; solving them efficiently would imply that all NP Problems can also be solved efficiently.
+    
+#### 5. Analysis of problems:
+- This involves understanding the problem's requirements, containts, and objectives before finding a solution.
+- It's an essential step to understand if an efficient solution is feasible.
+
+#### 6. Solution Approaches:
+1) **Brute Force:** Trying every possible solution until you find the correct one.
+
+2) **Greedy Algorithms:** Making a sequence of choice that seem optimal at the moment.
+
+3) **Divide And Conquer:** Breaking a problem into subproblems, solving each one, and combining the result.
+
+4) **Dynamic Problem:** Storing solutions to subprobems to avoid redundant calculations.
+
+5) **Backtracking:** Building a solution step-by-step, undoing steps as needed.
+
+#### 7. Algorithm Development:
+* Crafting a step-by-step method for solving a problem.
+* It involves defining the logical sequence that turns inputs into desired output.
+
+#### 8. Analysis of algorithm:
+1) **Time Complexity:**
+- Measures the time an algorithm takes relative to imput size, usually in Big O Notation.
+
+2) **Space Complexity:**
+- Measures the amount of memory the algorithm uses during its execution.
+
+#### 9. Efficiency
+- Refers to how well an algorithm utilizes resources(time and memory) while solving a problem.
+
+#### 10. Correctness
+- Ensure that the algorithm provides the correct output for all valid inputs.
+- Often proven with formal methods or testing.
+
+#### 11. Role of Data Structures in Problem Solving
+- Data Structure are crucial as they organize and store data effeciently.
+- Choosing the right data structure(e.g., arrays, trees, graphs) can make a significant difference in the performance of an algorithm.
+
+#### 12. Problem Solving steps
+1) **understand the problem :**
+- Fully grasp the requiremets and constraints.
+
+2) **Plan :**
+- Devise a clear approach or strategy.
+
+3) **Execute :**
+- Implement the solution based on the plan.
+
+4) **Review :**
+- Verify correctness, efficiency and potential improvements.
+
