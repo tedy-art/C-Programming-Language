@@ -105,6 +105,8 @@ Think of C as the building blocks for creating complex applications. For example
 * It was developed to overcome the problems of previous languages such as `B, BCPL,` etc.
 * Initially, C language was developed to be used in UNIX Operating System. It inherits many features of previous languages such as `B` and `BCPL`.
 
+---
+
 **Let's see the programming languages that were developed before C language :**
 
 |S.N.|Language       |Year  |  Developed By              |
@@ -117,6 +119,8 @@ Think of C as the building blocks for creating complex applications. For example
 | 6  | ANSI C        | 1989 | ANSI Committee             |
 | 7  | ANSI/ISO C    | 1990 | ISO Committee              |
 | 8  | C99           | 1999 | Standardization Committee  |
+
+---
 
 ### Use of C Language:
 * System Programming :
@@ -159,6 +163,8 @@ Think of C as the building blocks for creating complex applications. For example
     * Example: Cross-platform applications.
     * Reason: C programing can run on multiple platforms with minimal changes, making it versatile.
 
+---
+
 ### Applications of C Language
 1) Operating Systems
 2) GUI (Graphical User Interface)
@@ -170,6 +176,8 @@ Think of C as the building blocks for creating complex applications. For example
 8) MySQL
 9) Platforms for new programming languages
 10) Translators of high-level languages into machine language
+
+---
 
 ### Structure of a ‘C’ program
 **Syntax :**
@@ -183,6 +191,8 @@ Think of C as the building blocks for creating complex applications. For example
         // 3. statements & Expressions
     }
 ```
+
+---
 
 ### Sysntax or C structure explanations:
 **1. Preprocessor directive/headers files:**
