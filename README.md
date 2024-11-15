@@ -1,6 +1,6 @@
 # C Programming Language
 
-## <center>Problem Solving Techniques</center>
+## <center>Problem Solving Using C</center>
 
 
 |Semester No.| Course Code |Type of Course |   Course Title        |Credits|Lectures per week|
@@ -69,7 +69,7 @@
 ### ‘C’ Fundamentals
 
 
-### 1) What is a Computer?
+### What is a Computer?
 
 **Definition:**  
 A computer is an electronic device that processes data, performs calculations, and executes instructions to solve various tasks. It can store, retrieve, and process data based on instructions, allowing users to perform a wide range of activities.
@@ -79,7 +79,7 @@ Think of a smartphone as a modern, compact computer. When you use apps, like a c
 
 ---
 
-### 2) What is a Programming Language?
+### What is a Programming Language?
 
 **Definition:**  
 A programming language is a formal set of instructions that allows humans to communicate with computers. It provides the syntax and semantics needed to write programs that computers can understand and execute.
@@ -89,7 +89,7 @@ Imagine a recipe book written in English. If you follow the recipe steps, you en
 
 ---
 
-### 3) What is the `C Programming` Language?
+### What is the `C Programming` Language?
 
 **Definition:**  
 C is a high-level, general-purpose programming language that is widely used in system programming, embedded systems, and application development. It provides a good balance of low-level control over hardware and high-level syntax for readability, making it versatile and powerful for many applications.
@@ -99,3 +99,99 @@ Think of C as the building blocks for creating complex applications. For example
 
 ---
 
+### History of C language:
+* `C programming language` was developed in `1972` by `Dennis Ritchie` at `Bell laboratories` of `AT&T(Amerian Telephone & Telegraph)`, located in `U.S.A.`.
+* `Dennis Ritchie` is known as the `founder of the C language`.
+* It was developed to overcome the problems of previous languages such as `B, BCPL,` etc.
+* Initially, C language was developed to be used in UNIX Operating System. It inherits many features of previous languages such as `B` and `BCPL`.
+
+**Let's see the programming languages that were developed before C language :**
+
+|S.N.|Language       |Year  |  Developed By              |
+|----|---------------|------|----------------------------|
+| 1  | Algol         | 1960 | International Group        |
+| 2  | BCPL          | 1967 | Martin Richard             |
+| 3  | B             | 1970 | Ken Thompson               |
+| 4  | Traditional C | 1972 | Dennis Ritchie             |
+| 5  | K&RC          | 1978 | Kernighan & Dennis Ritchie |
+| 6  | ANSI C        | 1989 | ANSI Committee             |
+| 7  | ANSI/ISO C    | 1990 | ISO Committee              |
+| 8  | C99           | 1999 | Standardization Committee  |
+
+### Use of C Language:
+* System Programming :
+    * Example: Operating System(e.g., UNIX, Linux, Windows Kernal).
+    * Reason: C Provides Low-level memory access, making it ideal for system-level tasks like writing drivers or kernels.
+
+* Embedded System :
+    * Example: Microcontrollers, robotics, automotive software.
+    * Reason: C is lightweight and works well with limited hardware resources, which is criical for embedded systems.
+
+* Application Development:
+    * Example: Database Systems (MySQL, SQLite), text editors.
+    * Reason: C is highly efficient, allowing for performance-critical applications to be developed.
+
+* Gaming and Graphics:
+    * Example: Game Engines, Sumulations.
+    * Reason: The Speed and efficiency of C make it suitable for real-time applications like gaming.
+
+* Compiler and Interpreter Development:
+    * Example: Compilers for programming languages like Python and Java.
+    * Reason: C's performance and control over system hardware make it an ideal choice for building compilers and interpreters.
+
+* Network Programming:
+    * Example: Network protocols, server and client programs.
+    * Reason: C is often used in building the backbone of the internet, such as socket programming for communication.
+
+* IOT(Internet Of Things):
+    * Example: Smart home devices, wearable tech.
+    * Reson: C's efficiency and direct interaction with hardware are essential for IOT devices.
+
+* Research and Academics:
+    * Example: Algorithms, data structure Implementation.
+    * Reason: C serves as the foundation for teaching programming concepts due to its simplicity and clarity.
+
+* High-performance Application:
+    * Example: Financial Systems, stock trading platform.
+    * Reason: The speed and stability of C are critical in performance-sensitive applications.
+
+* Portable Application:
+    * Example: Cross-platform applications.
+    * Reason: C programing can run on multiple platforms with minimal changes, making it versatile.
+
+### Applications of C Language
+1) Operating Systems
+2) GUI (Graphical User Interface)
+3) Embedded Systems
+4) Google
+5) Design of a Compiler
+6) Mozilla Firefox and Thunderbird
+7) Gaming and animation
+8) MySQL
+9) Platforms for new programming languages
+10) Translators of high-level languages into machine language
+
+### Structure of a ‘C’ program
+**Syntax :**
+```c
+    // 1. Preprocessor directive/headers files
+    #include<stdio.h>
+
+    // 2. Main function
+    int main()
+    {
+        // 3. statements & Expressions
+    }
+```
+
+### Sysntax or C structure explanations:
+**1. Preprocessor directive/headers files:**
+* These are the lines in the lines in the program that start with `#`. As we discussed earlier, they are used to include header files in the program.
+
+**2. Main function:**
+* Every C program must have one main function. The execution of the program starts from the main function.
+
+**3. statements & Expressions:**
+* A `statement` in C is an instruction that the program executes. It typically performs an action, such as assigning a value to a variable, calling a function, or controlling the flow of execution.
+
+* An `expression` is a combination of variables, constants, operators, and function calls that produces a value.
