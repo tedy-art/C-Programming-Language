@@ -209,4 +209,4 @@ Think of C as the building blocks for creating complex applications. For example
 ---
 
 ### ‘C’ Program development life cycle:
-![alt text](http://url/to/img.png)
+![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/program-development-life-cycle.png)
