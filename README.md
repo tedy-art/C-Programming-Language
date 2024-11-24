@@ -205,3 +205,8 @@ Think of C as the building blocks for creating complex applications. For example
 * A `statement` in C is an instruction that the program executes. It typically performs an action, such as assigning a value to a variable, calling a function, or controlling the flow of execution.
 
 * An `expression` is a combination of variables, constants, operators, and function calls that produces a value.
+
+---
+
+### ‘C’ Program development life cycle:
+![alt text](http://url/to/img.png)
