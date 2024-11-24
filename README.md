@@ -179,7 +179,12 @@ Think of C as the building blocks for creating complex applications. For example
 
 ---
 
-### Structure of a ‘C’ program
+### Basic Structure of a ‘C’ program
+|Library File Access <br> Definition <br> Declaration |
+|-----|
+| Functions <br> main() <br> { <br>    &nbsp;&nbsp;&nbsp;&nbsp;Declaration <br>   &nbsp;&nbsp;&nbsp;&nbsp;Statements <br> }|
+|User-defined functions <br> funct1()<br>{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br>}<br> funct2()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; : <br>&nbsp;&nbsp;&nbsp;&nbsp; : <br>}|
+---
 **Syntax :**
 ```c
     // 1. Preprocessor directive/headers files
@@ -210,3 +215,4 @@ Think of C as the building blocks for creating complex applications. For example
 
 ### ‘C’ Program development life cycle:
 ![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/program-development-life-cycle.png)
+
