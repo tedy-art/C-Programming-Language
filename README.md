@@ -238,6 +238,8 @@ Think of C as the building blocks for creating complex applications. For example
 ### ‘C’ Program development life cycle:
 ![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/program-development-life-cycle.png)
 
+The above fig represents the **Program Development Life Cycle(PDLC)**, a step-by-step process to design, develop, test, and maintain a software program. Here's breakdown of each phase:
+
 **1. Problem Defination :**
 - **Perpose :**
     - Understand the problem you want the program to solve.
@@ -257,7 +259,7 @@ Think of C as the building blocks for creating complex applications. For example
 - **Purpose :**
     - Develop a logical sequence of steps to solve the problem.
 - **Activities :**
-    - Write algorithms(step by step)
+- Write algorithms(step by step)
 ```c
     1. start.
     2. Input num1 = 5.
@@ -267,5 +269,36 @@ Think of C as the building blocks for creating complex applications. For example
     6. End
 ```
 
-    - Create a flowcharts to represent logic.
+- Create a flowcharts to represent logic.
 ![flowchart of sum two numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart.png)    
+
+**4. Coding and Documentation :**
+- **Purpose :**
+    - Write the actual program using the chosen programming language.
+
+- **Activites :**
+    - Translate the algorithm into code.
+    - Add Comments for clarity.
+    - Create user and technical documentation.
+
+**5. Testing And Debugging :**
+- **Purpose :**
+    - Ensure the program is free from errors and works as intended.
+
+- **Activities :**
+    - Perform unit testing for individual components.
+    - Test the program with different inputs to identify logical errors.
+    - Debug and fix any issues.
+- **Example :**
+    - Test the addition program with inputs like 2 + 3, 0 + 0, and edge cases.
+
+**6. Maintenance :**
+- **Purpose :**
+    - update and imporve the program as requirements evolve.
+- **Activites :**
+    - Fix bugs reported by users.
+    - Add new features or enhance existing ones.
+    - Optimize performance.
+- **Example :**
+    - Add functionality to subtract or multiply numbers in the program.
+
