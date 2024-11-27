@@ -302,3 +302,112 @@ The above fig represents the **Program Development Life Cycle(PDLC)**, a step-by
 - **Example :**
     - Add functionality to subtract or multiply numbers in the program.
 
+### Language Fundamental:
+- Character set are the set of alphabets, letters, and special characters that are valid In C languages.
+- A Character refer to digit, alphabet or special symbol used to data representation.
+- The C character set consists of all uppercase A to Z, the lowercase a to z, the digits 0 to 9, Certain special characters and white spaces.
+
+#### The special character are listed below:
+- '*'(astrik)
+- '+'(plus)
+- []
+- /
+- \
+- !
+- "
+- <>
+- ()
+- =
+- |
+- {}
+- '#'(Hash symbol)
+- %
+- ,
+- ;
+- :
+- ?
+- &
+- '_'(underscore)
+- '-'(dash)
+- ^
+- $
+- ~
+- `
+
+#### White-space characters:
+- backspace (\b)
+- newline (\n)
+- horizontail tab (\t)
+- Vertical tab (\v)
+- form feed (\f)
+- carriage return (\n)
+
+- These characteristics combinations are known as escape sequence.
+
+### Tokens
+- In c program, the smallest individual meaningful units are called token.
+- C token are the basic building blocks in C language which are constructed together to write a C program.
+
+- C Tokens
+    - Identifiers
+    - Keywords
+    - Constants
+    - String literals 
+    - Operators
+    - Other Symbols
+
+- Identifiers are user defined words like sum, roll_no, sub_marks and used for variable and functions names.
+- Keywords are reserved words like int, for, while etc.
+- Constants are fixed values which do not change like 10, S etc.
+- Operators are symbols which represents an operators like +, -, * etc.
+- Other symbols are symbols which have particular meaning like`;`(semicolon) indicates end of an instruction.
+- String literals are sequence of zero or more characters enclosed in double quotes like "C programming languages.".
+
+#### 2) Keywords
+- Keywords are the reserved words used in C programming. Each keyword has fixed meaning and that cannot be changed by user.
+- Keywords are stadard identifiers that have standard predefined meaning in c.
+- It is strongly recommended that keywords should be in lower case letter.
+- Keywords can be used only for their intended purpose. Keywords can't be used as programmer defined identifiers.The keywords can't be used as names for variables.
+- There are totally 32 keywords used in a C programming.
+
+|    1     |    2   |     3    |    4     |
+|----------|--------|----------|----------|
+| int      | float  | double   | long     |
+| short    | signed | unsigned | const    |
+| if       | else   | switch   | break    |
+| default  | do     | while    |for       |
+| register | extern | static   | struct   |
+| typedef  | enum   | return   | sizeof   |
+| goto     | union  | auto     | case     |
+| void     | char   | continue | valatile |
+
+#### 3) Identifiers:
+- An identifiers is a user defined name used to represent program elements such as function names, variables, structures etc.
+- Identifiers is the name of a variable that is made up from combination of alphabets, digits and underscore.
+- Identifiers are created to give unique name to C entities to identify it during the execution of program.
+- The rules which should be followed while naming an identifiers are:
+    1) Identifiers name must be a sequence of letter and digits, and must begin with a letter.
+    2) The underscore characters('_') is considered as letter.
+    3) Names shouldn't be a keyword(such as int, float, if, break, for etc.)
+    4) Both upper-case letter and lower-case letter characters are allowed. However, they're not interchangeable.
+    5) No identifier may be keyword.
+    6) No special characters, such as semicolon, period, blank space, slash, or comma are permitted.
+
+Example of **valid** identifers:
+    sum, sum1, price_of_item, Rate_of_interest, add_odd.
+
+Example of **Invalid** identifers:
+    2rate, 6a, a + b, x%y
+
+#### 4) Constants:
+- Constants is a fixed value which does not change during program execution.
+- Constants are also referring as literals.
+- For a particular program we can have certain constants(For Example: For calculating area of circle, pi=3.148 is a constant) so instead of storing them in a particular variable and then using them, we can directly use them.
+- Constants can be of any of the basic data types.
+- Constants are terms that can't be changed during the execution of program. For Example: 1,2.5, "Programming is easy." etc.
+- In c, Constants can be classified as follows:
+1) Integer Constants
+2) Floating point Constants
+3) Character Constants
+4) String Constants
+5) Backslash characters/Escape Sequences
