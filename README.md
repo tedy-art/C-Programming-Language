@@ -184,35 +184,88 @@ Think of C as the building blocks for creating complex applications. For example
 |-----|
 | Functions <br> main() <br> { <br>    &nbsp;&nbsp;&nbsp;&nbsp;Declaration <br>   &nbsp;&nbsp;&nbsp;&nbsp;Statements <br> }|
 |User-defined functions <br> funct1()<br>{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br>}<br> funct2()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; : <br>&nbsp;&nbsp;&nbsp;&nbsp; : <br>}|
+
+- The program begins executing at main(). In the above declaration, library files are used to give instructions to complier for linking purpose.
+- All Constrants and global variables declarations is done here. In second box contains of main(). Local varaible declarations and statements defined in main().
+- The last and Third part consists of all user defined functions. These functions are called in main() functions.
 ---
-**Syntax :**
+**Example :**
 ```c
-    // 1. Preprocessor directive/headers files
+    // Preprocessor directive/headers files
     #include<stdio.h>
 
-    // 2. Main function
-    int main()
+    // Main function
+    int main(void)
     {
-        // 3. statements & Expressions
+        // statements & Expressions
+        printf("Hello world!\n");
+        return 0;
     }
 ```
 
----
-
 ### Sysntax or C structure explanations:
-**1. Preprocessor directive/headers files:**
-* These are the lines in the lines in the program that start with `#`. As we discussed earlier, they are used to include header files in the program.
+**1. #include<stdio.h>:**
+- These are the lines in the lines in the program that start with `#`.
+- As we discussed earlier, they are used to include header files in the program.
 
-**2. Main function:**
-* Every C program must have one main function. The execution of the program starts from the main function.
+**2. int main(void) :**
+- Every C program must have one main function.
+- The execution of the program starts from the main function.
 
-**3. statements & Expressions:**
-* A `statement` in C is an instruction that the program executes. It typically performs an action, such as assigning a value to a variable, calling a function, or controlling the flow of execution.
+**3. { :**
+- This opening curly brace indiates the beginning of the defination of the main function.
 
-* An `expression` is a combination of variables, constants, operators, and function calls that produces a value.
+**4. statements & Expressions:**
+- A `statement` in C is an instruction that the program executes. It typically performs an action, such as assigning a value to a variable, calling a function, or controlling the flow of execution.
 
+- An `expression` is a combination of variables, constants, operators, and function calls that produces a value.
+
+**5. printf("Hello world!\n"); :**
+- This line calls(executes the code for) a function named `printf()`, which is declared in the included header `stdio.h` and supplied from a system library.
+- In this call, the printf function is passed(provided with) a single argument, the address of the first character in the string literal `"Hello World\n"`.
+- The semicolon (;) terminates the statement.
+
+**6. return 0; :**
+- This line terminates the execution of the main function and causes it to return the integer value 0, which is interpreted by the run-time system as an exit code,(indicating successful execution).
+
+**7. } :**
+- This is closing curly brace indicates the end of the code for the main function.
 ---
+
+### Comile and Execute C Program:
+- Compilation is the process of converting a C program 
 
 ### ‘C’ Program development life cycle:
 ![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/program-development-life-cycle.png)
 
+**1. Problem Defination :**
+- **Perpose :**
+    - Understand the problem you want the program to solve.
+- **Activities :**
+    - Define the objectives.
+    - Identify inputs, outputs and required processes.
+
+**2. Problem Analysis :**
+- **Purpose :**
+    - Analyze the problem in detail to determine its requirements.
+- **Activities :**
+    - Break down the problem into smaller tasks.
+    - Identify constraints and limitations.
+    - Decide on tools, languages, and methods to use.
+
+**3. Algorithm Developemnt :**
+- **Purpose :**
+    - Develop a logical sequence of steps to solve the problem.
+- **Activities :**
+    - Write algorithms(step by step)
+```c
+    1. start.
+    2. Input num1 = 5.
+    3. Input num2 = 7.
+    4. Calculate sum=num1+num2.
+    5. output sum.
+    6. End
+```
+
+    - Create a flowcharts to represent logic.
+![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/program-development-life-cycle.png)    
