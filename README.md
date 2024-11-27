@@ -268,4 +268,4 @@ Think of C as the building blocks for creating complex applications. For example
 ```
 
     - Create a flowcharts to represent logic.
-![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/program-development-life-cycle.png)    
+![flowchart of sum two numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart.png)    
