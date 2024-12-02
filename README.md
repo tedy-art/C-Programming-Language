@@ -27,10 +27,11 @@
 ## Unit I : Problem solving, algorithms and flowcharts
 
     Problems :
-        1) Types of Problems
-        2) Problem solving using computer
-        3) Difficulties with problem solving
-        4) Problem solving aspects.
+        1) What is problems
+        2) Types of Problems
+        3) Problem solving using computer
+        4) Difficulties with problem solving
+        5) Problem solving aspects.
     Algorithm :
         1) Definition & Characteristics of algorithm
         2) Examples of algorithms
@@ -104,6 +105,138 @@
         1.3) Single dimension Arrays
         1.4) Two dimension Arrays
         1.5) Arrays & Function
+
+## Unit I : Problem Solving, Algorithms and flowcharts
+
+### 1. **What is a Problem?**
+   - A **problem** is a situation or task that requires a solution. 
+   - In the context of programming, a problem is a well-defined task that a program or a set of instructions needs to solve.
+   - Example: Calculating the area of a circle given its radius.
+
+---
+
+### 2. **Types of Problems**
+   - Problems can generally be categorized based on their nature:
+     1. **Computational Problems**: Problems that require mathematical or logical calculations.
+        - Example: Calculating factorial, finding prime numbers.
+     2. **Logical Problems**: Problems that focus on conditions and decisions.
+        - Example: Determining if a year is a leap year.
+     3. **Data Processing Problems**: Problems that deal with storing, retrieving, and processing data.
+        - Example: Sorting an array, searching in a database.
+     4. **Optimization Problems**: Problems that aim to find the best solution among several possibilities.
+        - Example: Finding the shortest path in a graph.
+
+---
+
+### 3. **Problem Solving Using a Computer**
+   - Solving a problem using a computer involves:
+     1. **Understanding the Problem**: Identifying the inputs, required outputs, and constraints.
+     2. **Designing an Algorithm**: Creating a step-by-step solution to solve the problem.
+     3. **Writing Code**: Translating the algorithm into a programming language (e.g., C).
+     4. **Testing and Debugging**: Ensuring the program works correctly and fixing errors if necessary.
+     5. **Optimizing**: Improving the program's performance in terms of speed, memory usage, etc.
+
+---
+
+### 4. **Difficulties with Problem Solving**
+   Common challenges include:
+   1. **Understanding the Problem**: Misunderstanding the requirements or missing key constraints.
+   2. **Complex Algorithms**: Difficulty in designing efficient algorithms for complex problems.
+   3. **Debugging**: Identifying and fixing errors in the code.
+   4. **Time and Space Limitations**: Ensuring the solution runs efficiently within the given resources.
+   5. **Logical Errors**: Mistakes in implementing conditions or loops.
+
+---
+
+### 5. **Problem-Solving Aspects**
+   Key aspects of problem-solving in programming include:
+   1. **Decomposition**: Breaking a problem into smaller, manageable parts.
+   2. **Abstraction**: Focusing on important details while ignoring irrelevant ones.
+   3. **Algorithm Design**: Creating logical steps to solve the problem.
+   4. **Modularity**: Using functions or modules to handle different parts of the problem.
+   5. **Iterative Approach**: Refining the solution based on testing and feedback.
+   6. **Debugging Skills**: Ability to identify and resolve issues in the code.
+
+---
+
+Here's a detailed explanation of the mentioned topics related to algorithms in C programming:
+
+---
+
+### 1. **Definition & Characteristics of Algorithm**
+   - **Definition**:  
+     An algorithm is a step-by-step set of instructions designed to perform a specific task or solve a problem. It is written in a way that a computer can execute.
+
+   - **Characteristics**:
+     1. **Finite**: An algorithm must always terminate after a finite number of steps.
+     2. **Well-Defined**: Each step must be clear and easy to understand.
+     3. **Input**: An algorithm can take zero or more inputs.
+     4. **Output**: An algorithm produces at least one output.
+     5. **Effectiveness**: The steps should be basic enough to be performed practically.
+     6. **Language Independence**: An algorithm is not bound to any specific programming language.
+
+---
+
+### 2. **Examples of Algorithms**
+   - **Algorithm to find the sum of two numbers**:
+     1. Start
+     2. Read two numbers, `a` and `b`
+     3. Calculate the sum, `sum = a + b`
+     4. Print the sum
+     5. End
+
+   - **Algorithm to find the largest of three numbers**:
+     1. Start
+     2. Read three numbers, `a`, `b`, and `c`
+     3. Compare:
+        - If `a > b` and `a > c`, `a` is the largest
+        - Else if `b > c`, `b` is the largest
+        - Else, `c` is the largest
+     4. Print the largest number
+     5. End
+
+---
+
+### 3. **Flowcharts with Examples**
+   - **Definition**:  
+     A flowchart is a graphical representation of an algorithm using symbols to show the flow of execution.
+
+   - **Example 1: Flowchart for finding the sum of two numbers**  
+     Symbols:
+     - Oval: Start/End
+     - Parallelogram: Input/Output
+     - Rectangle: Process
+
+     **Steps**:
+     - Start → Input `a`, `b` → `sum = a + b` → Output `sum` → End
+
+   - **Example 2: Flowchart for finding the largest of three numbers**
+     **Steps**:
+     - Start → Input `a`, `b`, `c`
+     - Decision: `a > b` and `a > c`? → Yes: Output `a`
+     - Else: Is `b > c`? → Yes: Output `b`, Else: Output `c`
+     - End
+
+---
+
+### 4. **Top-Down Design**
+   - **Definition**:  
+     Top-down design is a problem-solving approach where a large problem is broken into smaller, more manageable sub-problems. Each sub-problem is then solved step-by-step, often recursively.
+
+   - **Process**:
+     1. Break the main problem into smaller tasks.
+     2. Solve each smaller task individually.
+     3. Combine the solutions of the smaller tasks to solve the main problem.
+
+   - **Example**:
+     **Problem**: Write a program to calculate the total and average marks of a student.  
+     **Top-Down Steps**:
+     1. Input student marks.
+     2. Calculate the total marks.
+     3. Calculate the average marks.
+     4. Display the total and average.
+
+---
 
 
 ## Unit II : ‘C’ Fundamentals
