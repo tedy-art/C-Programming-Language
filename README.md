@@ -204,7 +204,7 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 **Symbols:**
 
 
-![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/Symbols.jpg)
+![flowchart Symbols](https://github.com/tedy-art/C-Programming-Language/blob/main/Symbols.jpg)
 
 
 **Example 1: Flowchart for finding the sum of two numbers**
@@ -218,12 +218,7 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 
 **Steps**:
 
-![flowchart of sum two numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart-of-largest-among-three-numbers.jpg)
-
-     - Start → Input `a`, `b`, `c`
-     - Decision: `a > b` and `a > c`? → Yes: Output `a`
-     - Else: Is `b > c`? → Yes: Output `b`, Else: Output `c`
-     - End
+![flowchart of largest of three numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart-of-largest-among-three-numbers.jpg)
 
 ---
 
