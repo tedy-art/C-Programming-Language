@@ -202,8 +202,7 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
      A flowchart is a graphical representation of an algorithm using symbols to show the flow of execution.
 
    - **Example 1: Flowchart for finding the sum of two numbers**  
-     Symbols:
-
+    ### Symbols:
     ![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/Symbols.jpg)
 
      **Steps**:
