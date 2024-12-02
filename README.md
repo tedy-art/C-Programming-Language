@@ -203,9 +203,7 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 
    - **Example 1: Flowchart for finding the sum of two numbers**  
      Symbols:
-     - Oval: Start/End
-     - Parallelogram: Input/Output
-     - Rectangle: Process
+     ![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/Symbols.jpg)
 
      **Steps**:
      - Start → Input `a`, `b` → `sum = a + b` → Output `sum` → End
