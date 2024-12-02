@@ -25,31 +25,33 @@
 # Syllabus
 ### Course Contents
 ## Unit I : Problem solving, algorithms and flowcharts
-**Problems :**
-    1) Types of Problems
-    2) Problem solving using computer
-    3) Difficulties with problem solving
-    4) Problem solving aspects.
-**Algorithm :**
-    1) Definition & Characteristics of algorithm
-    2) Examples of algorithms
-    3) Flow charts with examples
-    4) Top-down design
-**Examples**
-    1) Problem solving using Arithmetic Statements
-    2) Conditional Statement & Iterative Statements such as Addition/Multiplication
-    3) check number is positive/negative
-    4) Maximum of 2 numbers & 3 numbers
-    5) sum of first n numbers
-    6) sum of given n numbers
-    7) reverse digits of a number
-    8) check whether the number is palindrome
-    9) check number is prime
-    10) factorial of number
-    11) factors of number
-    12) GCD, LCM of numbers
+
+    Problems :
+        1) Types of Problems
+        2) Problem solving using computer
+        3) Difficulties with problem solving
+        4) Problem solving aspects.
+    Algorithm :
+        1) Definition & Characteristics of algorithm
+        2) Examples of algorithms
+        3) Flow charts with examples
+        4) Top-down design
+    Examples
+        1) Problem solving using Arithmetic Statements
+        2) Conditional Statement & Iterative Statements such as Addition/Multiplication
+        3) check number is positive/negative
+        4) Maximum of 2 numbers & 3 numbers
+        5) sum of first n numbers
+        6) sum of given n numbers
+        7) reverse digits of a number
+        8) check whether the number is palindrome
+        9) check number is prime
+        10) factorial of number
+        11) factors of number
+        12) GCD, LCM of numbers
 
 ## Unit II : C Fundamentals
+
     1)Introduction to C
         1.1) Features of C
         1.2) Structure of C Program
@@ -81,10 +83,12 @@
         7) Format specifiers
 
 ## Unit III : Control & Iterative Structures
+    
     1) If, If- Else Statements, Nested If Statements, Conditional Branching – switch statement
     2) Loop (while, do…while, for), break, continue, goto statements
 
 ## Unit IV Functions
+    
     1) Introduction to Functions
         1.1) Function Arguments
         1.2) Library & User defined functions
@@ -93,6 +97,7 @@
         1.5) Storage Classes – Auto, Static, Global and Register
 
 ## Unit V Arrays
+    
     1) Introduction to array
         1.1) Array Declarations
         1.2) Bounds Checking
