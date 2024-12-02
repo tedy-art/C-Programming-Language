@@ -218,6 +218,8 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 
 **Steps**:
 
+![flowchart of sum two numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart-of-largest-among-three-numbers.jpg)
+
      - Start → Input `a`, `b`, `c`
      - Decision: `a > b` and `a > c`? → Yes: Output `a`
      - Else: Is `b > c`? → Yes: Output `b`, Else: Output `c`
