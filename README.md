@@ -3,9 +3,7 @@
 ## <center>Problem Solving Using C</center>
 
 
-|Semester No.| Course Code |Type of Course |   Course Title        |Credits|Lectures per week|
-|------------|-------------|---------------|-----------------------|-------|-----------------|
-|    I       |  BBACA101T  |Major Mandatory|Problem Solving Using C|  02   |    03           |
+
 
 **Course Objectives:**
 
@@ -24,51 +22,86 @@
 7.To test, debug and execute programs.
 
 ---
-**Syllabus**
-## Unit 1: ‘C’ Fundamentals No. of Lectures :15
+# Syllabus
+### Course Contents
+## Unit I : Problem solving, algorithms and flowcharts
+**Problems :**
+    1) Types of Problems
+    2) Problem solving using computer
+    3) Difficulties with problem solving
+    4) Problem solving aspects.
+**Algorithm :**
+    1) Definition & Characteristics of algorithm
+    2) Examples of algorithms
+    3) Flow charts with examples
+    4) Top-down design
+**Examples**
+    1) Problem solving using Arithmetic Statements
+    2) Conditional Statement & Iterative Statements such as Addition/Multiplication
+    3) check number is positive/negative
+    4) Maximum of 2 numbers & 3 numbers
+    5) sum of first n numbers
+    6) sum of given n numbers
+    7) reverse digits of a number
+    8) check whether the number is palindrome
+    9) check number is prime
+    10) factorial of number
+    11) factors of number
+    12) GCD, LCM of numbers
 
-**‘C’ Fundamentals**
+## Unit II : C Fundamentals
+    1)Introduction to C
+        1.1) Features of C
+        1.2) Structure of C Program
+        1.3) C Character Set
+        1.4) Identifiers and Keywords
+        1.5) Variables and constants
+    2)Data types
+        2.1) Basic data types
+        2.2) Enumerated types
+        2.3) Type casting
+        2.4) Declarations
+        2.5) Expressions
+        2.6) Operators and Expressions Unary and Binary arithmetic operators
+        2.7) Increment Decrement operators
+        2.8) Relational and logical operators
+        2.9) Bit wise operators
+        2.10) Assignment operators
+        2.11) Comma operator
+        2.12) size of operator
+        2.13) Ternary conditional operator
+        2.14) Precedence and associativity
+    3) Input Output Statements: 
+        1) printf, scanf functions
+        2) getchar
+        3) putchar
+        4) getch functions
+        5) gets, puts functions
+        6) Escape sequence characters
+        7) Format specifiers
 
-    1) History of ‘C’ language.
-    2) Application areas.
-    3) Structure of a ‘C’ program.
-    4) ‘C’ Program development life cycle.
-    5) Function as building blocks.
-    6) ‘C’ tokens
-    7) Character set, Keywords, Identifiers
-    8) Variables, Constants (character, integer, float, string, escape sequences, enumeration constant).
-    9) Data Types (Built-in and user defined data types).
-    10) Operators, Expressions, types of operators, Operator precedence and Order of evaluation.
-    11) Character input and output.
-    12) String input and output.
-    13) Formatted input and output
+## Unit III : Control & Iterative Structures
+    1) If, If- Else Statements, Nested If Statements, Conditional Branching – switch statement
+    2) Loop (while, do…while, for), break, continue, goto statements
 
-**Control Structures**
+## Unit IV Functions
+    1) Introduction to Functions
+        1.1) Function Arguments
+        1.2) Library & User defined functions
+        1.3) Methods for parameter passing
+        1.4) Recursion
+        1.5) Storage Classes – Auto, Static, Global and Register
 
-    1) Decision making structures: - if, if-else, switch and conditional operator.
-    2) Loop control structures: - while do while, for.
-    3) Use of break and continue.
-    4) Nested structures.
-    5) Unconditional branching (goto statement)
----
-## Unit 2: Functions
-
-**Functions**
-
-    1) Concept of function, Advantages of Modular design.
-    2) Standard library functions.
-    3) User defined functions: - declaration, definition, function call, parameter passing (by value), return statement.
-    4) Recursive functions.
-    5) Scope of variables and Storage classes.
-**Arrays**
-
-    1) Concept of array.
-    2) Types of Arrays – One, Two and Multidimensional array.
-    3) Array Operations - declaration, initialization, accessing array elements.
-
-### ‘C’ Fundamentals
+## Unit V Arrays
+    1) Introduction to array
+        1.1) Array Declarations
+        1.2) Bounds Checking
+        1.3) Single dimension Arrays
+        1.4) Two dimension Arrays
+        1.5) Arrays & Function
 
 
+## Unit II : ‘C’ Fundamentals
 ### What is a Computer?
 
 **Definition:**  
