@@ -205,7 +205,7 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
     ### Symbols:
     ![c programing life cycle](https://github.com/tedy-art/C-Programming-Language/blob/main/Symbols.jpg)
 
-    **Steps**:
+    ### Steps:
     ![flowchart of sum two numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart.png)
 
    - **Example 2: Flowchart for finding the largest of three numbers**
