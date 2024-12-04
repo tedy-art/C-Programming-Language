@@ -224,7 +224,14 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 
 ### 4. **Top-Down Design**
    - **Definition**:  
-     Top-down design is a problem-solving approach where a large problem is broken into smaller, more manageable sub-problems. Each sub-problem is then solved step-by-step, often recursively.
+    - Top-down design is a problem-solving approach where a large problem is broken into smaller, more manageable sub-problems. 
+    - Each sub-problem is then solved step-by-step, often recursively.
+    - In this approach we have top to bottom of a program.
+    - Here function is the basic unit.
+    - this approach is used when we have good idea of final result but we have very less detail about each function.
+    - this approach mainly focus on `How to task Done.`
+    - i.e. procedure
+    - ex programming language: c, VB, FORTAN, Pascal etc.
 
    - **Process**:
      1. Break the main problem into smaller tasks.
