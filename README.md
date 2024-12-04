@@ -327,6 +327,96 @@ Think of C as the building blocks for creating complex applications. For example
 | 8  | C99           | 1999 | Standardization Committee  |
 
 ---
+### **Features of C Programming Language**
+
+C is a powerful, efficient, and widely-used programming language that serves as the foundation for many modern programming languages. Below are its key features:
+
+---
+
+### **1. Simplicity**
+   - C has a simple syntax, making it easy to learn and use.
+   - Example: A "Hello, World!" program in C is straightforward and concise.
+
+---
+
+### **2. Structured Language**
+   - C supports structured programming, allowing developers to break programs into smaller, manageable functions or modules.
+   - Example: A program to calculate factorials can be divided into input, processing, and output functions.
+
+---
+
+### **3. Portability**
+   - Code written in C can run on various platforms with little or no modification.
+   - This makes it a **machine-independent** language.
+
+---
+
+### **4. Speed**
+   - C is a compiled language, so it is faster than interpreted languages like Python.
+   - Low-level operations like bitwise manipulation are highly efficient.
+
+---
+
+### **5. Rich Library**
+   - C provides a large number of built-in functions in its standard library.
+   - Example: `printf()` for output and `scanf()` for input.
+
+---
+
+### **6. Low-Level Access**
+   - C allows manipulation of hardware and memory using pointers and address operators.
+   - Example: Direct memory access through pointers.
+
+---
+
+### **7. Extendibility**
+   - You can add your own functions to the standard library, enhancing its capabilities.
+
+---
+
+### **8. Middle-Level Language**
+   - C combines the features of both high-level and low-level languages:
+     - High-level: Supports structured programming.
+     - Low-level: Allows direct memory access and manipulation.
+
+---
+
+### **9. Dynamic Memory Allocation**
+   - C supports dynamic memory management using functions like `malloc()`, `calloc()`, and `free()`.
+
+---
+
+### **10. Pointer Support**
+   - C provides extensive use of pointers, enabling developers to work directly with memory.
+   - Example: Passing arrays or large data structures by reference.
+
+---
+
+### **11. Modularity**
+   - C programs can be written as a collection of functions, making it easier to debug, test, and maintain.
+
+---
+
+### **12. Recursion**
+   - C supports recursive functions, allowing functions to call themselves.
+   - Example: Calculating Fibonacci numbers using recursion.
+
+---
+
+### **13. Powerful Operators**
+   - C has a wide range of operators, including arithmetic, relational, logical, and bitwise operators.
+
+---
+
+### **14. Embedded Systems Development**
+   - Due to its low-level features, C is widely used in developing firmware and embedded systems.
+
+---
+
+### **15. Versatility**
+   - C can be used for a variety of applications, from system software like operating systems to application development.
+
+---
 
 ### Use of C Language:
 * System Programming :
@@ -508,13 +598,13 @@ The above fig represents the **Program Development Life Cycle(PDLC)**, a step-by
 - **Example :**
     - Add functionality to subtract or multiply numbers in the program.
 
-### Language Fundamental:
+### C Character Set:
 - Character set are the set of alphabets, letters, and special characters that are valid In C languages.
 - A Character refer to digit, alphabet or special symbol used to data representation.
 - The C character set consists of all uppercase A to Z, the lowercase a to z, the digits 0 to 9, Certain special characters and white spaces.
 
 #### The special character are listed below:
-- '*'(astrik)
+- '*'(asterisk)
 - '+'(plus)
 - []
 - /
@@ -605,15 +695,73 @@ Example of **valid** identifers:
 Example of **Invalid** identifers:
     2rate, 6a, a + b, x%y
 
-#### 4) Constants:
-- Constants is a fixed value which does not change during program execution.
-- Constants are also referring as literals.
-- For a particular program we can have certain constants(For Example: For calculating area of circle, pi=3.148 is a constant) so instead of storing them in a particular variable and then using them, we can directly use them.
-- Constants can be of any of the basic data types.
-- Constants are terms that can't be changed during the execution of program. For Example: 1,2.5, "Programming is easy." etc.
-- In c, Constants can be classified as follows:
-1) Integer Constants
-2) Floating point Constants
-3) Character Constants
-4) String Constants
-5) Backslash characters/Escape Sequences
+### **Constants in C**
+- **constants** are fixed values that do not change during the execution of a program. 
+- These values are used directly in the code and are classified based on their types.
+
+---
+
+### **Types of Constants**
+
+1. **Integer Constants**
+   - Whole numbers without any fractional part.
+   - Can be written in:
+     - **Decimal** (Base 10): range 0 to 9 `0, 123, -456`
+     - **Octal** (Base 8): Starts with `0` range 0 to 7 (e.g., `012`, `077`)
+     - **Hexadecimal** (Base 16): Starts with `0x` or `0X` range 0 1 2 3 4 5 6 7 8 9 A B C D E F (e.g., `0x1A`, `0XFF`).
+
+2. **Floating-Point Constants**
+   - Numbers with a fractional part or in exponential notation.
+   - Examples: `3.14`, `-0.001`, `2.5e3` (equals \( 2.5 \times 10^3 \)).
+
+3. **Character Constants**
+   - Single characters enclosed in single quotes (`'`).
+   - Examples: `'A'`, `'z'`, `'5'`, `'#'`.
+   - Represented by their ASCII values in memory.
+
+4. **String Constants**
+   - A sequence of characters enclosed in double quotes (`"`).
+   - Examples: `"Hello"`, `"123"`, `"C Programming"`.
+
+5. **Symbolic Constants**
+   - Constants defined using `#define` preprocessor directive or `const` keyword.
+   - Examples:
+     ```c
+     #define PI 3.14
+     const int MAX = 100;
+     ```
+
+6. **Enumeration Constants**
+   - Constants represented as integral values, defined using the `enum` keyword.
+   - Example:
+     ```c
+     enum Week {Monday, Tuesday, Wednesday};
+     ```
+
+---
+
+### **Declaring Constants in C**
+
+1. **Using `const` Keyword**
+   - Declares a constant variable whose value cannot be modified.
+   - Example:
+     ```c
+     const int MAX = 100;
+     printf("Maximum value: %d\n", MAX);
+     ```
+
+---
+
+### **Rules for Constants**
+- Integer constants cannot have decimal points.
+- Character constants must be enclosed in single quotes.
+- String constants must be enclosed in double quotes.
+- Floating-point constants can use exponential notation (e.g., `2.5e3`).
+
+---
+
+### **Key Points**
+- Use constants to improve code readability and maintainability.
+- Constants help prevent accidental modification of critical values.
+
+---
