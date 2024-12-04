@@ -37,7 +37,7 @@
         2) Examples of algorithms
         3) Flow charts with examples
         4) Top-down design
-    Examples
+    Examples of solve:
         1) Problem solving using Arithmetic Statements
         2) Conditional Statement & Iterative Statements such as Addition/Multiplication
         3) check number is positive/negative
@@ -260,7 +260,20 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 ![flowchart of largest of numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/Bottom-top%20approach.png)
 
 ---
-
+### Example for Solve:
+1) Problem solving using Arithmetic Statements
+2) Conditional Statement & Iterative Statements such as Addition/Multiplication
+3) check number is positive/negative
+4) Maximum of 2 numbers & 3 numbers
+5) sum of first n numbers
+6) sum of given n numbers
+7) reverse digits of a number
+8) check whether the number is palindrome
+9) check number is prime
+10) factorial of number
+11) factors of number
+12) GCD, LCM of numbers
+---
 ## Unit II : ‘C’ Fundamentals
 ### What is a Computer?
 
