@@ -765,3 +765,87 @@ Example of **Invalid** identifers:
 - Constants help prevent accidental modification of critical values.
 
 ---
+### Data Types in C Programming Language
+- In C, data types define the type of data a variable can hold.
+- They help allocate the correct memory size for a variable and ensure proper handling of the data during program execution.
+
+The data types in C can be classified as follows:
+| Types | Description | Data Types |
+|-------|-------------|------------|
+|Primitive Data Types | Primitive data types are basic data types that are used for represeting simple values such as integers, float, characters, etc.| int, char, float, double, void|
+| Derived Types | The data types that are derived from the primitive or built-in datatypes are reffered to as Dervied Data Types. | array, pointer, function |
+| User-defined Data Types | Ther user-defined data types are defined by the user himself| structure, union, enum |
+
+
+**The following are some main primitive data types in C:**
+- Integer Data Type
+- Character Data Type
+- Float Data Type
+- Double Data Type
+- Void Data Type
+
+#### Integer Data Type:
+- The `integer data type` in c is used to store the integer numbers(any number including positive, negative, and Zero without having decimal part).
+- Octal values, Hexadeciamal values and decimal values can be stored in int data type in c.
+
+* Range: -2,147,483,648 to 2,147,483,647
+* Size: 4Bytes
+* Format Specifiers: %d
+
+Syntax:
+```c
+int var_name;
+```
+*The integer data type in can also be used as:*
+**1.unsigned int:** 
+- Unsigned int data type in C is used to store the data values from zero to positive numbers but it can’t store negative values like signed int.
+
+**2.short int:** 
+- It is lesser in size than the int by 2 bytes so can only store values from -32,768 to 32,767.
+
+**3.long int:** 
+- Larger version of the int datatype so can store values greater than int.
+**4.unsigned short int:** 
+- Similar in relationship with short int as unsigned int with int.
+
+Example of int & all int's types:
+```c
+#include <stdio.h>
+
+int main()
+{
+    // Integer value with positive data.
+    int a = 9;
+
+    // Integer value with negative data.
+    int b = -9;
+
+    // U or u is used to specify an unsigned integer constant.
+    unsigned int c = 89U;
+
+    // L or l is used to specify a long integer constant.
+    long int d = 99998L;
+
+    // Printing integer data types
+    printf("Integer value with positive data: %d\n", a);
+    printf("Integer value with negative data: %d\n", b);
+
+    // Unsigned integer: Use %u as the format specifier
+    printf("Integer value with unsigned int data: %u\n", c);
+
+    // Long integer: Use %ld as the format specifier
+    printf("Integer value with long int data: %ld\n", d);
+
+    return 0;
+}
+```
+
+Output:
+```
+Integer value with positive data: 9
+Integer value with negative data: -9
+Integer value with unsigned int data: 89
+Integer value with long int data: 99998
+```
+
+
