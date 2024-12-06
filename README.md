@@ -1062,3 +1062,8 @@ The size of double data type : 8
 # 2.2) Enumerated types
 - An `enum` is a special type that represents a group of constants(unchangeable values).
 - To create an enum, use the `enum` keyword, followed by the name of the enum, and separate the enum items with commas:
+
+Syntax:
+```c
+enum flag {const1, const2, ..., constN};
+```
