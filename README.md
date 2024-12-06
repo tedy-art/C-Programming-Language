@@ -765,7 +765,8 @@ Example of **Invalid** identifers:
 - Constants help prevent accidental modification of critical values.
 
 ---
-### Data Types in C Programming Language
+# 2.Data Types
+## 2.1.Data Types in C Programming Language
 - In C, data types define the type of data a variable can hold.
 - They help allocate the correct memory size for a variable and ensure proper handling of the data during program execution.
 
@@ -776,6 +777,7 @@ The data types in C can be classified as follows:
 | Derived Types | The data types that are derived from the primitive or built-in datatypes are reffered to as Dervied Data Types. | array, pointer, function |
 | User-defined Data Types | Ther user-defined data types are defined by the user himself| structure, union, enum |
 
+---
 
 **The following are some main primitive data types in C:**
 - Integer Data Type
@@ -783,6 +785,8 @@ The data types in C can be classified as follows:
 - Float Data Type
 - Double Data Type
 - Void Data Type
+
+---
 
 #### Integer Data Type:
 - The `integer data type` in c is used to store the integer numbers(any number including positive, negative, and Zero without having decimal part).
@@ -848,6 +852,8 @@ Integer value with unsigned int data: 89
 Integer value with long int data: 99998
 ```
 
+---
+
 #### Character Data Type :
 - Character data type allows its variable to store only a single character.
 - The size of the character is 1 byte.
@@ -897,6 +903,8 @@ Value of a after increment is: b
 Value of c: c
 ```
 
+---
+
 #### Float Data Type :
 - In C programming language float data type is used to store floating-point values.
 - Float in c is used to store decimal and exponential values.
@@ -937,6 +945,8 @@ Output:
 2.500000
 0.000200
 ```
+
+---
 
 #### Double Data Type
 - A Double data type in c is used to store decimal numbers(numbers with floating point values) with double precision.
@@ -983,12 +993,16 @@ Output:
 2312312312.123123
 ```
 
+---
+
 #### Void Data Type:
 - The void data type in C is used to specify that no value is present.
 - It does not provide a result value to its caller.
 - It has no values and no operations.
 - It is used to represent nothing.
 - Void is used in multiple ways as function return type, function arguments as void, and pointers to void.
+
+---
 
 ### Size of Data Types in C:
 - The size of the data types in C is dependent on the size of the architecture, so we cannot define the universal size of the data types.
@@ -1027,6 +1041,8 @@ The size of float data type : 4
 The size of double data type : 8
 ```
 
+---
+
 ### **Data Types in C: Size and Format Specifiers**
 
 | **Data Type**         | **Size (bytes)** | **Format Specifier** |
@@ -1041,3 +1057,8 @@ The size of double data type : 8
 | **float**             | 4                | `%f`                 |
 | **double**            | 8                | `%lf`                |
 
+---
+
+# 2.2) Enumerated types
+- An `enum` is a special type that represents a group of constants(unchangeable values).
+- To create an enum, use the `enum` keyword, followed by the name of the enum, and separate the enum items with commas:
