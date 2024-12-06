@@ -939,3 +939,105 @@ Output:
 ```
 
 #### Double Data Type
+- A Double data type in c is used to store decimal numbers(numbers with floating point values) with double precision.
+- It is used to define numeric values which hold numbers with decimal values in C.
+- The double data type is basically a precision sort of data type that is capable of holding 64 bits of decimal numbers or floating points.
+- Since double has More precision as compared to that float then it is much more obvious that it occuies twice the memory occupied by the floating-point type.
+- It can easily accommodate about 16 to 17 bigits after or before a decimal point.
+
+* Range: 1.7E-308 to 1.7E+308
+* Size: 8 Byte
+* Format Specifier: %lf
+
+Syntax:
+```c
+double var_name;
+```
+
+Example:
+```c
+// C Program to demonstrate use of double data type
+#include <stdio.h>
+
+int main()
+{
+    double a = 123123123.00;
+    double b = 12.293123;
+    double c = 2312312312.123123;
+
+    printf("%lf\n", a);
+
+    printf("%lf\n", b);
+
+    printf("%lf", c);
+
+    return 0;
+}
+
+```
+
+Output:
+```c
+123123123.000000
+12.293123
+2312312312.123123
+```
+
+#### Void Data Type:
+- The void data type in C is used to specify that no value is present.
+- It does not provide a result value to its caller.
+- It has no values and no operations.
+- It is used to represent nothing.
+- Void is used in multiple ways as function return type, function arguments as void, and pointers to void.
+
+### Size of Data Types in C:
+- The size of the data types in C is dependent on the size of the architecture, so we cannot define the universal size of the data types.
+- For that, the C language provides the `sizeof()` operator to check the size of the data types.
+
+Example of `sizeof()`:
+```c
+// C Program to print size of
+// different data type in C
+#include <stdio.h>
+
+int main()
+{
+    int size_of_int = sizeof(int);
+    int size_of_char = sizeof(char);
+    int size_of_float = sizeof(float);
+    int size_of_double = sizeof(double);
+
+    printf("The size of int data type : %d\n", size_of_int);
+    printf("The size of char data type : %d\n",
+           size_of_char);
+    printf("The size of float data type : %d\n",
+           size_of_float);
+    printf("The size of double data type : %d",
+           size_of_double);
+
+    return 0;
+}
+```
+
+Output:
+```c
+The size of int data type : 4
+The size of char data type : 1
+The size of float data type : 4
+The size of double data type : 8
+```
+
+### **Data Types in C: Size and Format Specifiers**
+
+| **Data Type**         | **Size (bytes)** | **Format Specifier** |
+|------------------------|------------------|-----------------------|
+| **int**               | 4                | `%d` (signed), `%u` (unsigned) |
+| **unsigned int**      | 4                | `%u`                 |
+| **short int**         | 2                | `%d` (signed), `%u` (unsigned) |
+| **unsigned short int**| 2                | `%u`                 |
+| **long int**          | 8                | `%ld`                |
+| **unsigned long int** | 8                | `%lu`                |
+| **char**              | 1                | `%c`                 |
+| **float**             | 4                | `%f`                 |
+| **double**            | 8                | `%lf`                |
+
