@@ -848,4 +848,94 @@ Integer value with unsigned int data: 89
 Integer value with long int data: 99998
 ```
 
+#### Character Data Type :
+- Character data type allows its variable to store only a single character.
+- The size of the character is 1 byte.
+- It is the most basic data type in C.
+- It stores character and requires a single byte of memory in almost all compiler.
 
+* Range: (-128 to 127) or (0 to 255)
+* Size: 1 Byte
+* Format Specifiers: %C
+
+Syntax
+```c
+char var_name;
+```
+
+Example:
+```c
+// C program to print Integer data types.
+#include <stdio.h>
+
+int main()
+{
+    char a = 'a';
+    char c;
+
+    printf("Value of a: %c\n", a);
+
+    a++;
+    printf("Value of a after increment is: %c\n", a);
+
+    // c is assigned ASCII values which corresponds to the character 'c'
+    // a-->97 b-->98 c-->99
+    // here c will be printed
+    c = 99;
+
+    printf("Value of c: %c", c);
+
+    return 0;
+}
+```
+
+Output:
+
+```c
+Value of a: a
+Value of a after increment is: b
+Value of c: c
+```
+
+#### Float Data Type :
+- In C programming language float data type is used to store floating-point values.
+- Float in c is used to store decimal and exponential values.
+- It is used to store decimal numbers(numbers with floating point values) with single precision.
+
+* Range: 1.2E-38 to 3.4Et38
+* Size: 4 Byte
+* Format Specifiers: %f
+
+Syntax
+```c
+float var_name;
+```
+
+Example:
+```c
+// C Program to demonstrate use of Floating types
+#include <stdio.h>
+
+int main()
+{
+    float a = 9.0f;
+    float b = 2.5f;
+
+    // 2x10^-4
+    float c = 2E-4f;
+    printf("%f\n", a);
+    printf("%f\n", b);
+    printf("%f", c);
+
+    return 0;
+}
+```
+
+Output:
+```c
+9.000000
+2.500000
+0.000200
+```
+
+#### Double Data Type
