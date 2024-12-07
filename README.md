@@ -85,8 +85,14 @@
 
 ## Unit III : Control & Iterative Structures
     
-    1) If, If- Else Statements, Nested If Statements, Conditional Branching – switch statement
-    2) Loop (while, do…while, for), break, continue, goto statements
+    1) Control Structure :
+        1) If, If- Else Statements, Nested If Statements, 
+    2)Conditional Branching:
+        1)switch statement
+    3) Loop :
+        1) while And do…while loop
+        2) for loop
+        3) break, continue, goto statements
 
 ## Unit IV Functions
     
@@ -1065,5 +1071,16 @@ The size of double data type : 8
 
 Syntax:
 ```c
-enum flag {const1, const2, ..., constN};
+enum enum_name {const1, const2, ..., constN};
 ```
+
+- enum_name: Name of the enum type.
+- const1, const2: List of identifiers that represent integer constants.
+
+**Features of `enum` :**
+
+1. Default Values:
+    - Constants in an enum are assigned values starting from 0 By default, incrementing by 1 for subsequent constants.
+
+2. Explicit Assignment:
+    - 
