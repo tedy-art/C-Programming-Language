@@ -1083,4 +1083,29 @@ enum enum_name {const1, const2, ..., constN};
     - Constants in an enum are assigned values starting from 0 By default, incrementing by 1 for subsequent constants.
 
 2. Explicit Assignment:
-    - 
+    - specific values can be assigned to any constant within the enum.
+
+3. Type:
+    - Enum constant of type `int`.
+
+4. Scope:
+    - The Enum constant are in the same scope as the `enum` defination.
+
+Ex.
+```c
+#include<stdio.h>
+
+enum WeekDays = { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAR, SATURDAY, SUNDAY};
+
+int main(){
+    enum WeekDays today = TUESDAY;
+
+    printf("The value of tueday: %d\n", today);
+    return 0;
+}
+```
+
+Output:
+```c
+The value of WEDNESDAY: 1
+```
