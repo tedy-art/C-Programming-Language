@@ -62,18 +62,10 @@
     2)Data types
         2.1) Basic data types
         2.2) Enumerated types
-        2.3) Type casting
-        2.4) Declarations
-        2.5) Expressions
-        2.6) Operators and Expressions Unary and Binary arithmetic operators
-        2.7) Increment Decrement operators
-        2.8) Relational and logical operators
-        2.9) Bit wise operators
-        2.10) Assignment operators
-        2.11) Comma operator
-        2.12) size of operator
-        2.13) Ternary conditional operator
-        2.14) Precedence and associativity
+        2.3) Constant Data Types
+        2.4) Type casting
+        2.5) Operators in C
+        2.6) Precedence and associativity
     3) Input Output Statements: 
         1) printf, scanf functions
         2) getchar
@@ -1107,5 +1099,502 @@ int main(){
 
 Output:
 ```c
-The value of WEDNESDAY: 1
+The value of TUESDAY: 1
 ```
+
+**enum with explicit Values :**
+```c
+#include <stdio.h>
+
+enum Colors { RED = 1, GREEN = 3, BLUE = 5 };
+
+int main() {
+    printf("The value of RED: %d\n", RED);      // Output: 1
+    printf("The value of GREEN: %d\n", GREEN);  // Output: 3
+    printf("The value of BLUE: %d\n", BLUE);    // Output: 5
+    return 0;
+}
+```
+
+O/p:
+```c
+The value of RED: 1
+The value of GREEN: 3
+The value of BLUE: 5 
+```
+---
+# 2.3) Constant Data Types:
+- Constants in c are fixed values that connot be modified during program execution. 
+- They can be of various data types like `int, float, char` etc.
+- Constants are categorized based on their data types and usage.
+
+Syntax
+```c
+const data_type var_name = vales;
+```
+
+Ex:
+```c
+#include<stdio.h>
+
+int main()
+{
+    // defining int constant using const keyword
+    const int int_const = 25;
+
+    // defining character constant using const keyword
+    const char char_const = 'A';
+
+    // defining float constant using const keyword
+    const float float_const = 15.66;
+    
+    printf("Printing value of integer constant: %d\n", int_const);
+    printf("Printing value of Character constant: %c\n", char_const);
+    printf("Printing value of float constant: %f\n", float_const);
+
+    return 0;
+
+}
+```
+O/p:
+Printing value of integer constant: 25
+Printing value of Character constant: A
+Printing value of float constant: 15.660000
+
+
+---
+# 2.4) Type casting:
+- Type casting in C is the process of converting a variable from one data type to another.
+- This is commonly used to perform operations between different types of data and to ensure compatility or accuracy.
+
+## **Types of Type Casting**
+1) Implicit Type Casting(Type Conversion)
+2) Explicit TYpe Casting
+
+### 1. Implicit Type Casting(Type Conversion):
+* Done automatically by the compiler.
+* Converts a smaller data type to a larger data type to prevent data loss.
+* Also known as `type promotion`.
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a = 5;
+    float b = 3.2;
+    float result = a + b; // 'a' is promoted to float
+    printf("Result : %.2f\n", result); // o/p: 8.20
+    return 0;
+}
+```
+
+### 2. Explicit Type Costing:
+- Performed manually by the programmer.
+- Syntax:`(type_name) expression`
+- Used to convert a larger data type to smaller data type, or between incomatible types.
+```c
+#include<stdio.h>
+
+int main()
+{
+    float num = 3.14;
+    int intNum = (int)num; // Explicitly cast float to int
+    printf("Float : %.2f, integer: %d\n", num, intNum);
+    // O/p: Float : 3.14, integer: 3
+    return 0;
+}
+```
+
+### 2.5 Operators in c
+- Operators in C are special symbols or keywords used to perform operations on variables and values. 
+- They form the foundation for expressions and allow you to manipulate data.
+
+---
+
+### **Types of Operators in C**
+
+1. **Arithmetic Operators**  
+2. **Relational Operators**  
+3. **Logical Operators**  
+4. **Bitwise Operators**  
+5. **Assignment Operators**  
+6. **Increment and Decrement Operators**  
+7. **Conditional (Ternary) Operator**  
+8. **Special Operators**  
+
+---
+
+### **1. Arithmetic Operators**
+Used to perform basic mathematical operations.
+
+| **Operator** | **Operation**         | **Example**   |
+|--------------|------------------------|---------------|
+| `+`          | Addition              | `a + b`       |
+| `-`          | Subtraction           | `a - b`       |
+| `*`          | Multiplication        | `a * b`       |
+| `/`          | Division              | `a / b`       |
+| `%`          | Modulus (remainder)   | `a % b`       |
+
+---
+
+### **2. Relational Operators**
+Used to compare two values and return `true (1)` or `false (0)`.
+
+| **Operator** | **Operation**          | **Example**   |
+|--------------|-------------------------|---------------|
+| `==`         | Equal to               | `a == b`      |
+| `!=`         | Not equal to           | `a != b`      |
+| `<`          | Less than              | `a < b`       |
+| `>`          | Greater than           | `a > b`       |
+| `<=`         | Less than or equal to  | `a <= b`      |
+| `>=`         | Greater than or equal to| `a >= b`      |
+
+---
+
+### **3. Logical Operators**
+Used to combine multiple conditions.
+
+| **Operator** | **Operation**          | **Example**           |
+|--------------|-------------------------|-----------------------|
+| `&&`         | Logical AND            | `(a > 0 && b > 0)`    |
+| `\|\|`         | Logical OR             | `(a > 0 \|\| b > 0)`    |
+| `!`          | Logical NOT            | `!(a > 0)`            |
+
+---
+
+### **4. Bitwise Operators**
+Used to perform bit-level operations.
+
+| **Operator** | **Operation**    | **Example** |
+|--------------|------------------|-------------|
+| `&`          | Bitwise AND      | `a & b`     |
+| `\|`          | Bitwise OR       | `a \| b`     |
+| `^`          | Bitwise XOR      | `a ^ b`     |
+| `~`          | Bitwise NOT      | `~a`        |
+| `<<`         | Left shift       | `a << 2`    |
+| `>>`         | Right shift      | `a >> 2`    |
+
+---
+
+### **5. Assignment Operators**
+Used to assign values to variables.
+
+| **Operator** | **Operation**              | **Example**   |
+|--------------|-----------------------------|---------------|
+| `=`          | Assign                     | `a = 5`       |
+| `+=`         | Add and assign             | `a += 5`      |
+| `-=`         | Subtract and assign        | `a -= 5`      |
+| `*=`         | Multiply and assign        | `a *= 5`      |
+| `/=`         | Divide and assign          | `a /= 5`      |
+| `%=`         | Modulus and assign         | `a %= 5`      |
+
+---
+
+### **6. Increment and Decrement Operators**
+Used to increase or decrease a variable's value by 1.
+
+| **Operator** | **Operation**       | **Example**         |
+|--------------|---------------------|---------------------|
+| `++`         | Increment           | `++a` (pre-increment), `a++` (post-increment) |
+| `--`         | Decrement           | `--a` (pre-decrement), `a--` (post-decrement) |
+
+---
+
+### **7. Conditional (Ternary) Operator**
+A shorthand for if-else conditions.
+
+| **Operator** | **Operation**           | **Example**          |
+|--------------|--------------------------|----------------------|
+| `? :`        | Conditional expression   | `a > b ? a : b`      |
+
+---
+
+### **8. Special Operators**
+
+| **Operator** | **Operation**                 | **Example**           |
+|--------------|-------------------------------|-----------------------|
+| `sizeof`     | Returns the size of a variable| `sizeof(int)`         |
+| `&`          | Address of                   | `&a` (address of `a`) |
+| `*`          | Pointer dereference          | `*ptr`                |
+| `->`         | Access structure pointer     | `ptr->field`          |
+| `.`          | Access structure member      | `struct.field`        |
+
+---
+
+### **Example Program**
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 10, c;
+
+    // Arithmetic Operators
+    c = a + b;
+    printf("Addition: %d\n", c);
+
+    // Relational Operator
+    if (a < b) {
+        printf("a is less than b\n");
+    }
+
+    // Logical Operator
+    if (a > 0 && b > 0) {
+        printf("Both are positive numbers\n");
+    }
+
+    // Assignment Operator
+    c = a + b;
+    printf("Assigned value: %d\n", c);
+
+    // Conditional Operator
+    int max = (a > b) ? a : b;
+    printf("Maximum value: %d\n", max);
+
+    // Bitwise Operator
+    printf("Bitwise AND: %d\n", a & b);
+
+    return 0;
+}
+```
+
+# 2.6 Operator precedence and associativity:
+- **Operator precedence** determines the order in which operators are evaluated in an expression.  
+- **Associativity** determines the direction of evaluation when two operators of the same precedence appear in an expression.
+- Operator precedence and associativity are rules that decide the order in which parts of an expression are calculated.
+- Precedence tells us which operators should be evaluated first, while associativity determines the direction (left to right or right to left) in which operators with the same precedence are evaluated.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 6, b = 3, c = 4;
+    int res;
+
+    // Precedence and associativity applied here
+    res = a + b * c / 2;
+
+    printf("%d", res);
+
+    return 0;
+}
+```
+O/p:
+```c
+12
+```
+
+**Note:**
+- The above expression is evaluated as 6 + ( (3 * 4) / 2) = 16.
+
+**Operator Precedence**
+- Operator precedence determines which operation is performed first in an expression with more than one operator with different precedence. 
+
+
+Ex.
+```c
+10 + 20 * 30
+```
+
+- The expression contains two operators, + (addition) and * (multiplication). 
+- According to operator precedence, multiplication (*) has higher precedence than addition (+), so multiplication is checked first. 
+- After evaluating multiplication, the addition operator is then evaluated to give the final result.
+
+| S.N.| Operation  | Description |
+|-----|------------|-------------|
+|  1  | 10+`20*30` | multiplication (*) has higher precedence than addition (+)|
+|  2  | 10+600     | Now addition will happen as + has lower precedence  |
+|  3  | 610        | we have got the solution for the equation. |
+
+```c
+#include <stdio.h>
+
+int main() {
+  
+    // Printing the value of same expression
+    printf("%d", 10 + 20 * 30);
+
+    return 0;
+}
+```
+O/p:
+```c
+610
+```
+
+- As we can see, the expression is evaluated as,10 + (20 * 30) but not as (10 + 20) * 30 due to * operator having higher precedence.
+
+
+---
+
+### **Operator Precedence Table**
+The table lists operators in decreasing order of precedence. Operators at the same level have the same precedence and are evaluated based on their associativity.
+
+| **Precedence Level** | **Operators**                     | **Associativity**   | **Category**            |
+|-----------------------|-----------------------------------|---------------------|-------------------------|
+| 1                     | `()` (parentheses), `[]`, `->`, `.` | Left to Right       | Postfix                |
+| 2                     | `++` (post-increment), `--` (post-decrement) | Left to Right       | Postfix                |
+| 3                     | `++` (pre-increment), `--` (pre-decrement), `+` (unary plus), `-` (unary minus), `!`, `~`, `*` (pointer), `&` (address), `sizeof`, `(type)` (type cast) | Right to Left       | Unary                  |
+| 4                     | `*`, `/`, `%`                   | Left to Right       | Multiplicative          |
+| 5                     | `+`, `-`                        | Left to Right       | Additive               |
+| 6                     | `<<`, `>>`                      | Left to Right       | Shift                  |
+| 7                     | `<`, `<=`, `>`, `>=`            | Left to Right       | Relational             |
+| 8                     | `==`, `!=`                      | Left to Right       | Equality               |
+| 9                     | `&`                             | Left to Right       | Bitwise AND            |
+| 10                    | `^`                             | Left to Right       | Bitwise XOR            |
+| 11                    | `\|`                             | Left to Right       | Bitwise OR             |
+| 12                    | `&&`                            | Left to Right       | Logical AND            |
+| 13                    | `\|\|`                            | Left to Right       | Logical OR             |
+| 14                    | `?:`                            | Right to Left       | Conditional (ternary)  |
+| 15                    | `=`, `+=`, `-=`, `*=`, `/=`, `%=` | Right to Left       | Assignment             |
+| 16                    | `,`                             | Left to Right       | Comma                  |
+
+---
+
+### **Rules to Remember**
+
+1. **Higher precedence operators** are evaluated before lower precedence operators.
+2. Operators with **equal precedence** are evaluated based on their associativity.
+   - **Left-to-right associativity** means evaluation starts from the left.
+   - **Right-to-left associativity** means evaluation starts from the right.
+
+---
+
+### **Examples of Precedence**
+
+1. **Multiplicative vs. Additive Operators**
+   ```c
+   int a = 10, b = 20, c = 5, result;
+   result = a + b * c; // Multiplication (*) has higher precedence than addition (+).
+   printf("Result: %d\n", result); // Output: 110
+   ```
+
+2. **Relational vs. Logical AND**
+   ```c
+   int a = 10, b = 20, c = 5;
+   if (a < b && b > c) { // Relational (<, >) is evaluated before logical AND (&&).
+       printf("Condition is true\n");
+   }
+   ```
+
+3. **Unary Minus vs. Multiplication**
+   ```c
+   int a = -5, b = 4, result;
+   result = -a * b; // Unary minus (-) is evaluated first, then multiplication (*).
+   printf("Result: %d\n", result); // Output: 20
+   ```
+
+---
+
+### **Examples of Associativity**
+
+1. **Left-to-Right Associativity**
+   ```c
+   int a = 10, b = 5, c = 2, result;
+   result = a - b - c; // Left-to-right evaluation: (10 - 5) - 2
+   printf("Result: %d\n", result); // Output: 3
+   ```
+
+2. **Right-to-Left Associativity**
+   ```c
+   int a = 10, b = 5, c = 2, result;
+   result = a = b = c; // Right-to-left evaluation: b = c, then a = b
+   printf("a = %d, b = %d, c = %d\n", a, b, c); // Output: 2, 2, 2
+   ```
+
+---
+
+# 3) `Input` `Output` Statements:
+- `Input` and `output` are essential parts of any programming language.
+- In C, `input` is generally handled through the `scanf()` function, and `output` is managed using the `printf()` function.
+- These functions are part of the `Standard Input/Output` (`stdio`) library in `C`.
+
+### **Input and Output Statements in C**
+
+Input and output are essential parts of any programming language. In C, input is generally handled through the `scanf()` function, and output is managed using the `printf()` function. These functions are part of the **Standard Input/Output (stdio)** library in C.
+
+---
+
+### **Output Statements in C**
+#### **3.1. `printf()`**
+- **Purpose**: Prints formatted output to the screen.
+- **Syntax**: 
+  ```c
+  printf("format string", argument_list);
+  ```
+- **Common Format Specifiers**:
+  | **Specifier** | **Meaning**              |
+  |---------------|--------------------------|
+  | `%d`          | Integer                 |
+  | `%f`          | Float                   |
+  | `%c`          | Character               |
+  | `%s`          | String                  |
+  | `%u`          | Unsigned Integer        |
+  | `%ld`         | Long Integer            |
+  | `%lf`         | Double                  |
+
+- **Example**:
+  ```c
+  #include <stdio.h>
+  
+  int main() {
+      int a = 10;
+      float b = 3.14;
+      char c = 'A';
+      
+      printf("Integer: %d\n", a);
+      printf("Float: %.2f\n", b);
+      printf("Character: %c\n", c);
+      return 0;
+  }
+  ```
+
+---
+
+### **3.2 Input Statements in C**
+
+The primary function for input in C is:
+
+#### **1. `scanf()`**
+- **Purpose**: Reads formatted input from the user.
+- **Syntax**:
+  ```c
+  scanf("format string", &variable_list);
+  ```
+  - Use the **address-of operator (`&`)** before variables (except for strings).
+  
+- **Common Format Specifiers**:
+  (Same as `printf()`).
+
+- **Example**:
+  ```c
+  #include <stdio.h>
+  
+  int main() {
+      int num;
+      float value;
+      
+      printf("Enter an integer: ");
+      scanf("%d", &num);
+      
+      printf("Enter a float value: ");
+      scanf("%f", &value);
+      
+      printf("You entered integer: %d and float: %.2f\n", num, value);
+      return 0;
+  }
+  ```
+
+---
+
+### **Key Points to Remember**
+1. **`scanf()` stops reading input** at whitespace (spaces, tabs, or newline characters).  
+2. For **string input**, `scanf()` can read a single word but not a full line (use `gets()` or `fgets()` for that).
+   ```c
+   char name[50];
+   printf("Enter your name: ");
+   scanf("%s", name); // Reads a single word
+   printf("Hello, %s!\n", name);
+   ```
+
+---
+
