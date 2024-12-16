@@ -1508,10 +1508,6 @@ The table lists operators in decreasing order of precedence. Operators at the sa
 - In C, `input` is generally handled through the `scanf()` function, and `output` is managed using the `printf()` function.
 - These functions are part of the `Standard Input/Output` (`stdio`) library in `C`.
 
-### **Input and Output Statements in C**
-
-Input and output are essential parts of any programming language. In C, input is generally handled through the `scanf()` function, and output is managed using the `printf()` function. These functions are part of the **Standard Input/Output (stdio)** library in C.
-
 ---
 
 ### **Output Statements in C**
@@ -1583,18 +1579,117 @@ The primary function for input in C is:
       return 0;
   }
   ```
+### **Address-of Operator (`&`) in C**
+- The **address-of operator (`&`)** is used in C to obtain the memory address of a variable. 
+- It is one of the most essential concepts when dealing with pointers, input/output functions like `scanf()`, and memory manipulation.
+
+---
+
+### **What is the Address-of Operator?**
+- The `&` operator returns the **memory address** of a variable.  
+- A **memory address** is the location in the computer's memory where the variable's data is stored.
+
+---
+
+### **Why is `&` Used in `scanf()`?**
+- When using `scanf()` to take input, the function needs to modify the variable directly.
+- To do this, `scanf()` requires the **memory address** of the variable to know where to store the input value.
+- The `&` operator provides this memory address.
+
+For example:
+```c
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num); // Pass the address of `num` to store input
+    printf("You entered: %d\n", num);
+    return 0;
+}
+```
+
+Here’s what happens step by step:
+1. **`int num`**: A variable is declared and memory is allocated for it.
+2. **`&num`**: The address of `num` is passed to `scanf()`.
+3. **`scanf()`**: Stores the input value at the memory address provided.
+
+---
+
+### **How to Use the Address-of Operator?**
+
+#### **1. Printing the Memory Address**
+You can use the `&` operator to print the memory address of a variable:
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    printf("The value of a: %d\n", a);
+    printf("The address of a: %p\n", &a); // %p for pointer (memory address)
+    return 0;
+}
+```
+
+**Output**:
+```
+The value of a: 10
+The address of a: 0x7ffee1a7c98c (example address)
+```
+
+---
+
+### **Relationship with Pointers**
+The `&` operator is closely tied to pointers, which are variables that store memory addresses.
+
+Example:
+```c
+#include <stdio.h>
+
+int main() {
+    int num = 20;
+    int *ptr = &num; // Store the address of `num` in `ptr`
+
+    printf("Value of num: %d\n", num);
+    printf("Address of num: %p\n", &num);
+    printf("Value of ptr (address of num): %p\n", ptr);
+    printf("Value pointed by ptr: %d\n", *ptr); // Dereference the pointer
+    return 0;
+}
+```
+
+**Output**:
+```
+Value of num: 20
+Address of num: 0x7ffee1a7c98c (example address)
+Value of ptr (address of num): 0x7ffee1a7c98c
+Value pointed by ptr: 20
+```
 
 ---
 
 ### **Key Points to Remember**
-1. **`scanf()` stops reading input** at whitespace (spaces, tabs, or newline characters).  
-2. For **string input**, `scanf()` can read a single word but not a full line (use `gets()` or `fgets()` for that).
+1. **Use in `scanf()`**:
+   - Always use `&` with non-string variables in `scanf()`.
+   - Strings (character arrays) are an exception because the name of the array already acts as a pointer (address).
+
+   Example:
    ```c
-   char name[50];
-   printf("Enter your name: ");
-   scanf("%s", name); // Reads a single word
-   printf("Hello, %s!\n", name);
+   char name[20];
+   scanf("%s", name); // No `&` needed for strings
    ```
+
+2. **Error without `&` in `scanf()`**:
+   If you forget the `&`, the program will likely crash or give unexpected behavior because `scanf()` will attempt to write to an invalid location.
+
+   ```c
+   int a;
+   scanf("%d", a); // Missing '&' will cause an error
+   ```
+
+3. **Not Needed in `printf()`**:
+   - The `printf()` function only needs the value of the variable, not its address.
 
 ---
 
+### **3.3 getchar :**
