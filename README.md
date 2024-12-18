@@ -1735,3 +1735,36 @@ you entered: A
 ### **putchar :**
 - The `putchar()` function in c is used to write(print) a single character to the standard output.
 - It is part of the <stdio.h> library.
+
+- Syntax:
+```c
+int putchar(int character);
+```
+
+**int character:**
+- The character(in int from or its ASCCI value) to be printed.
+
+**How `putchar` works??**
+- it takes an integer value represnting a char. (e.g. "A" or its ASCII value 65) and prints that character to the console.
+- It is commonly used to print a single character.
+
+Ex.
+```c
+#include<stdio.h>
+
+int main()
+{
+    char c = 'A';
+    putchar(c); // print the character 'A'
+    putchar('\n'); // prints a newline character
+    putchar(67); // ASCII value of `C`
+    return 0;
+}
+```
+
+Output:
+```
+A
+C
+```
+
