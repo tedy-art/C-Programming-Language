@@ -1165,7 +1165,7 @@ Printing value of float constant: 15.660000
 ---
 # 2.4) Type casting:
 - Type casting in C is the process of converting a variable from one data type to another.
-- This is commonly used to perform operations between different types of data and to ensure compatility or accuracy.
+- This is commonly used to perform operations between different types of data and to ensure compatibility or accuracy.
 
 ## **Types of Type Casting**
 1) Implicit Type Casting(Type Conversion)
@@ -1693,3 +1693,45 @@ Value pointed by ptr: 20
 ---
 
 ### **3.3 getchar :**
+- the `getchar()` function in c is used to read a single character from the standard input(`keybord keys`).
+- It is part of the <stdio.h> library and is one of the simplest ways to handle character input.
+
+- Syntax
+```c
+int getchar(void);
+```
+
+* **return Type:**
+- return the ASCII value of the character read.
+    * ASCII - `A`merican `S`tandard `C`ode for `I`nformation `I`nterchange.
+* **error:**
+- On failure or end-of-file(EOF) it return EOF(typically -1).
+
+**How `getchar()` works??**
+
+- 1) it reads a single character entered by the user.
+- 2) The character is returned as an integer(ASCII value).
+- 3) You can store the returned value in a variable and process it.
+
+Ex.
+```c
+#include<stdio.h>
+
+int main()
+{
+    char c;
+    printf("Enter a character : ");
+    c = getchar(); // Reads one char from Input. // c = 'A';
+    printf("You entered: %c", c); // Output you entered A.
+}
+```
+
+Output:
+```
+Enter a character : A
+you entered: A
+```
+
+### **putchar :**
+- The `putchar()` function in c is used to write(print) a single character to the standard output.
+- It is part of the <stdio.h> library.
