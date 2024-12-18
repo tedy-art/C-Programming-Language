@@ -902,6 +902,64 @@ Value of c: c
 ```
 
 ---
+#### String in C
+- strings are used to storing text/characters.
+- For Ex. `"Hello,World!"` is a string of character.
+- Unlike many other programming language, C dose not have a string type to easily create string varaibles.
+- format Specifiers: `%s` for strings
+- Instead, you must use the `char` type and create an`array` of characters to make a strings in c:
+
+Ex.
+```c
+char greetings[] = "Hello world!";
+```
+
+- `Note:`
+* You have to use double quotes(" ").
+
+Ex.
+```c
+#include<stdio.h>
+
+int main()
+{
+    char greetings[] = "Hello World!";
+    printf("%s", greetings);
+    return 0;
+}
+```
+
+**Access Strings :**
+- since strings are actually arrays in c, you can access a string by reffering to its index number inside square brackets[].
+
+**Arrays index always start from 0**
+
+Ex.
+```c
+#include<stdio.h>
+
+int main()
+{
+    char greetings[] = "Hello World!";
+    printf("%c", greetings[0]);
+
+    return 0;
+}
+```
+
+**Modify string :**
+```c
+#include<stdio.h>
+
+int main()
+{
+    char greetings[] = "Hello World!";
+    greetings[0] = 'J';
+    printf("%s", greetings);
+    return 0;
+}
+```
+---
 
 #### Float Data Type :
 - In C programming language float data type is used to store floating-point values.
