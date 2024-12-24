@@ -78,7 +78,7 @@
 ## Unit III : Control & Iterative Structures
     
     1) Control Structure :
-        1) If, If- Else Statements, Nested If Statements, 
+        1) If, If- Else Statements, Nested If Statements
     2)Conditional Branching:
         1)switch statement
     3) Loop :
@@ -86,7 +86,7 @@
         2) for loop
         3) break, continue, goto statements
 
-## Unit IV Functions
+## Unit IV : Functions
     
     1) Introduction to Functions
         1.1) Function Arguments
@@ -95,7 +95,7 @@
         1.4) Recursion
         1.5) Storage Classes – Auto, Static, Global and Register
 
-## Unit V Arrays
+## Unit V : Arrays
     
     1) Introduction to array
         1.1) Array Declarations
@@ -104,7 +104,7 @@
         1.4) Two dimension Arrays
         1.5) Arrays & Function
 
-## Unit I : Problem Solving, Algorithms and flowcharts
+# Unit I : Problem Solving, Algorithms and flowcharts
 
 ### 1. **What is a Problem?**
    - A **problem** is a situation or task that requires a solution. 
@@ -272,7 +272,7 @@ Here's a detailed explanation of the mentioned topics related to algorithms in C
 11) factors of number
 12) GCD, LCM of numbers
 ---
-## Unit II : ‘C’ Fundamentals
+# Unit II : ‘C’ Fundamentals
 ### What is a Computer?
 
 **Definition:**  
@@ -763,7 +763,7 @@ Example of **Invalid** identifers:
 - Constants help prevent accidental modification of critical values.
 
 ---
-# 2.Data Types
+## 2.Data Types
 ## 2.1.Data Types in C Programming Language
 - In C, data types define the type of data a variable can hold.
 - They help allocate the correct memory size for a variable and ensure proper handling of the data during program execution.
@@ -1826,3 +1826,105 @@ A
 C
 ```
 
+# Unit III : Control & Iterative structure:
+    1) Conrtol Structure:
+        1) if statements.
+        2) if-else statements.
+        3) nested if statements.
+    2) Conditional Statements:
+        1) Switch statements.
+    3) Loops:
+        1) While and do...while loops.
+        2) for loop.
+        3) break, continue, go to statement.
+    
+### 1) Conrtol Structure:
+    - 1) if statements.
+    - 2) if-else statements.
+    - 3) nested if statements.
+
+#### **1) if statement :**
+- The if statement in c is the simplest decision-making statement.
+- It consists of the test condition and a block of code that is executed if and only if the given condition is true.
+- otherwise, it is skipped from execution.
+
+**Syntax :**
+```c
+if(condition)
+{
+    // if body.
+    // statements to execute if condition is true.
+}
+```
+
+Ex:
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n=9;
+
+    // if statement with true condition
+    if(n<10) // if `n` is less than 10
+    {
+        printf("%d < 10", n);
+    }
+
+    // if statement with false condition
+    if(n>20) // if `n` is greater than 20
+    {
+        printf("%d > 20", n);
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+9 < 10
+```
+
+#### How `if statements` works??
+* Expression is *true*..
+```c
+int num = 9;
+if(num<10)--------------- //if condition is true
+{                       |
+    // statements;<-----|
+}
+
+// code after if
+```
+
+* Expression is `false`..
+```c
+int num = 9;
+if(num>10)--------------- //if condition is false
+{                       |
+    // statements;      |
+}                       |
+                        |
+// code after if<-------|
+```
+
+**Ex : Check for Negative Numbers :**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n = -4;
+
+    // condition to check for negative number
+    if(n < 0)
+    {
+        printf("%d is Negative", n);
+    }
+    return 0;
+}
+```
+
+**Ex : Check if an integer lines in the range.**
+- To check whether the number is in the given range, we will need to combine two condition.
+- One to check 

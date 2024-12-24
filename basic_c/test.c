@@ -1,12 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-    char c;
+int main()
+{
+    int n=9;
 
-    printf("Enter a character: ");
-    c = getchar();  // Reads one character from input
+    // if statement with true condition
+    if(n<10) // if `n` is less than 10
+    {
+        printf("%d < 10", n);
+    }
 
-    printf("You entered: %c\n", c);  // Outputs the entered character
+    // if statement with false condition
+    if(n>20) // if `n` is greater than 20
+    {
+        printf("%d > 20", n);
+    }
     return 0;
 }
-
