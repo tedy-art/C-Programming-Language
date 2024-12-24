@@ -1908,7 +1908,7 @@ if(num>10)--------------- //if condition is false
 // code after if<-------|
 ```
 
-**Ex : Check for Negative Numbers :**
+**Ex 1 : Check for Negative Numbers :**
 ```c
 #include<stdio.h>
 
@@ -1925,6 +1925,52 @@ int main()
 }
 ```
 
-**Ex : Check if an integer lines in the range.**
+**Ex 2 : Check if an integer lines in the range.**
 - To check whether the number is in the given range, we will need to combine two condition.
-- One to check 
+- One to check for upper limit and one to check for lower limit.
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n = 11;
+
+    // check whether n is the range [10, 20]
+    if(n <= 20 && n >= 10)
+    {
+        printf("%d is in the range [10, 20]", n);
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+11 is in range [10, 20]
+```
+
+**Ex 3 : Check whether the Number is Even or Odd.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n = 4;
+    // condition to check for even number
+    if(n%2==0)
+    {
+        printf("%d is Even", n);
+    }
+
+    // Condition to chech for odd number
+    if(n%2!=0)
+    {
+        printf("%d is odd", n);
+    }
+    return 0;
+}
+```
+
+#### **2) if-else statement :**
+- 
