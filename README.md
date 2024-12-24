@@ -564,6 +564,7 @@ The above fig represents the **Program Development Life Cycle(PDLC)**, a step-by
 ```
 
 - Create a flowcharts to represent logic.
+
 ![flowchart of sum two numbers](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart.png)    
 
 **4. Coding and Documentation :**
@@ -1856,6 +1857,10 @@ if(condition)
     // statements to execute if condition is true.
 }
 ```
+
+**Flowchart of if statement in C**
+
+![if statement flowchart](https://github.com/tedy-art/C-Programming-Language/blob/main/if.png)
 
 Ex:
 ```c
