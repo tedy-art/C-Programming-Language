@@ -78,7 +78,7 @@
 ## Unit III : Control & Iterative Structures
     
     1) Control Structure :
-        1) If, If- Else Statements, Nested If Statements
+        1) If, If- Else Statements, else-if statement, Nested If Statements
     2)Conditional Branching:
         1)switch statement
     3) Loop :
@@ -1831,7 +1831,8 @@ C
     1) Conrtol Structure:
         1) if statements.
         2) if-else statements.
-        3) nested if statements.
+        3) else-if statement
+        4) nested if statements.
     2) Conditional Statements:
         1) Switch statements.
     3) Loops:
@@ -1842,7 +1843,8 @@ C
 ### 1) Conrtol Structure:
     - 1) if statements.
     - 2) if-else statements.
-    - 3) nested if statements.
+    - 3) else-if statement
+    - 4) nested if statements.
 
 #### **1) if statement :**
 - The if statement in c is the simplest decision-making statement.
