@@ -2299,3 +2299,70 @@ The number is Zero.
 ```
 
 
+#### **4) Nested-if statements :**
+- A `nested if statements` is an if statement placed iside another if or else block.
+- This allos the program to evaluate multiple conditions in a hierarchical manner.
+
+- **Syntax**
+```c
+if(condition1)
+{
+    // outer if statements
+    if(condition2)
+    {
+        //inner if statement
+        // Code to execute if both condition1 and condition2 are true
+    }
+    else
+    {
+        // code to execute if both conditon1 and condition2 is false.
+    }
+}
+else
+{
+    // code to execute if condition1 is false
+}
+```
+
+- **Flowchart:**
+
+ ![nested-if-else statement flowchart](https://github.com/tedy-art/C-Programming-Language/blob/main/nested_if_else.png)
+
+**Ex 1: Finding the largest of three Numbers.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a=10, b=20, c=15;
+
+    if(a > b)
+    {
+        if(a > c)
+        {
+            printf("a is the largest.\n");
+        }
+        else
+        {
+            printf("c is the largest.\n");
+        }
+    }
+    else
+    {
+        if(b > c)
+        {
+            printf("b is the largest.\n");
+        }
+        else
+        {
+            printf("c is the largest.\n");
+        }
+    }
+    return 0;
+}
+```
+
+O/p
+```c
+b is the largest.
+```
