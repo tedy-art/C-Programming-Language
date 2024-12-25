@@ -1980,4 +1980,123 @@ int main()
 ```
 
 #### **2) if-else statement :**
-- 
+- The `if-else statement` is a decision-making construct that allows a program to execute a block of code if a specified condition is true, and another block if the condition is false.
+- Syntax
+```c
+if(condition)
+{
+    // block of code to be executed if the condition is true.
+}
+else
+{
+    // block of code to be executed if the condition is false.
+}
+```
+
+- Flowchart:
+1. Evaluate the condition:
+    * if true : Execute the code block inside the `if` block.
+    * if false : Execute the code block inside the `else` block.
+
+![if-else statement flowchart](https://github.com/tedy-art/C-Programming-Language/blob/main/flowchart_of_if_else_in_c.png)
+
+**Ex 1. Simple if-else program.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int time=20;
+
+    if(time < 18)
+    {
+        printf("Good day");
+    }
+    else
+    {
+        printf("Good Evening");
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+Good evening
+```
+
+**Ex 2. Simple if-else statements**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int num = 10;
+    if(num > 0)
+    {
+        printf("%d is positive.\n", num);
+    }
+    else
+    {
+        printf("%d is negative.\n", num);
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+The number is positive.
+```
+
+**Ex 3. Check Number is even or odd.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int num = 7;
+
+    if(num%2==0)
+    {
+        printf("%d is even number.\n", num);
+    }
+    else
+    {
+        printf("%d is odd number.\n", num);
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+7 is odd number.
+```
+
+**Ex 4. Check if a number is negative.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int n = -7;
+    // if the number is negative.
+    if(n < 0)
+    {
+        printf("Negative!!!");
+    }
+    else
+    {
+        // If the number is not negative.
+        printf("Not Negative...");
+    }
+    return 0;
+}
+```
+
+O/p:
+```
+Negative!!!
+```
+
