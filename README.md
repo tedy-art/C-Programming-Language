@@ -1827,6 +1827,72 @@ A
 C
 ```
 
+## **Comments in C**
+- Comments can be used to explain code, and make it more readable.
+- It can also be used to prevent execution when testing alternative code.
+- Comments can be **singled-lined** or **multi-lined**.
+
+### Singled-line comments:
+* Singled-line comments start with forword slashes(`//`).
+* Any text between `//` and the end of the line is ignore by the compiler(will not execute).
+
+**Ex**
+```c
+#include<stdio.h>
+
+int main()
+{
+    // this is a comment
+    printf("Hello, world!");
+    return 0;
+}
+```
+
+Or...
+```c
+#include<stdio.h>
+
+int main()
+{
+    printf("Hello, world!");// this is a comment
+    return 0;
+}
+```
+
+Or...
+```c
+#include<stdio.h>
+
+int main()
+{
+    // this is a comment
+    printf("Hello, world!");
+    // this is a comment 
+    // printf("Hello, world!");
+    // this is a comment
+    return 0;
+}
+```
+
+### Multi-line comments:
+- Multi-line comments start with `/*` and ends with `*/`.
+- Any text between `/*` and `*/` will be ignore by the compiler
+
+**Ex**
+```c
+#include<stdio.h>
+
+int main()
+{
+    /* 
+        the code below will prints the worlds hello world!
+        to the screen, and it is amazing!
+    */
+    printf("Hello, world!");
+    return 0;
+}
+```
+
 # Unit III : Control & Iterative structure:
     1) Conrtol Structure:
         1) if statements.
@@ -2231,3 +2297,5 @@ O/p:
 ```c
 The number is Zero.
 ```
+
+
