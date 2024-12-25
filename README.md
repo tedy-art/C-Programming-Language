@@ -2100,3 +2100,134 @@ O/p:
 Negative!!!
 ```
 
+#### **3) else-if statement**
+- The `else if statement` is used to evalute multiple conditions sequentially.
+- It allows the program to choose from multiple alternatives and execute the block of code corresponding to the first condition that evalutes to true.
+- Syntax:
+```c
+if(condition1)
+{
+    // Code to execute if condition1 is true
+}
+else if(condition2)
+{
+    // Code to execute if condition2 is true
+}
+else if(condition3)
+{
+    // code to execute if condition3 is true
+}
+else
+{
+    // code to execute if none of the above condition are true
+}
+```
+
+**Flowchart :**
+
+ ![if-else-if statement flowchart](https://github.com/tedy-art/C-Programming-Language/blob/main/if_else_if_flowchart.png)
+
+**How `else if statement` works??**
+1. The program checks condition1.
+2. If condition1 is true, its block is executed, and the rest of the else if and else blocks are skipped.
+3. If condition1 is false, it checks condition2 and so on.
+4. If no conditions are true, the else block(if present) is executed.
+
+**Ex 1. Simple `else-if` program.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int marks = 85;
+
+    if(marks >= 90)
+    {
+        printf("Grade : A\n");
+    }
+    else if(marks >= 80)
+    {
+        printf("Grade : B\n");
+    }
+    else if(marks >= 70)
+    {
+        printf("Grade : C\n");
+    }
+    else if(marks >= 60)
+    {
+        printf("Grade : D\n");
+    }
+    else
+    {
+        printf("Grade : F\n");
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+Grade : B
+```
+
+**Ex 2. Age group classification**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int age = 25;
+
+    if(age<13)
+    {
+        printf("You are a child.\n");
+    }
+    else if(age >= 13 && age <=19)
+    {
+        printf("You are a teenager.\n");
+    }
+    else if(age >= 20 && age <= 59)
+    {
+        printf("You are an adult.\n");
+    }
+    else
+    {
+        printf("You are a senior citizen.\n");
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+You are an adult.
+```
+
+**Ex 3. Number Classification.**
+```c
+#include<stdio.h>
+
+int main()
+{
+    int num = 0;
+
+    if(num > 0)
+    {
+        printf("The number is positive.\n");
+    }
+    else if(num < 0)
+    {
+        printf("The number is negative.\n");
+    }
+    else
+    {
+        printf("The number is Zero.\n");
+    }
+    return 0;
+}
+```
+
+O/p:
+```c
+The number is Zero.
+```
