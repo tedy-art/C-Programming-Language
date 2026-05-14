@@ -2366,3 +2366,38 @@ O/p
 ```c
 b is the largest.
 ```
+## 2)Conditional Branching: 
+### 1)switch statement in c
+
+- C switch statement is a conditional statement that allows you to execute different code blocks based on the value of a variable or an expression. It is often used in place of if-else ladder when there are multiple conditions.
+
+- It is an alternative to multiple if-else-if statements.
+
+**Syntax**
+```c
+switch(expression)
+{
+    case constant1:
+        // code
+        break;
+
+    case constant2:
+        // code
+        break;
+
+    case constant3:
+        // code
+        break;
+
+    default:
+        // code
+}
+```
+### Working of Switch Statement
+- Expression is evaluated once.
+- Its value is compared with each case.
+- Matching case executes.
+- break stops further execution.
+- default executes if no case matches.
+
+**Flowchart**
