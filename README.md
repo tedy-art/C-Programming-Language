@@ -2401,3 +2401,4 @@ switch(expression)
 - default executes if no case matches.
 
 **Flowchart**
+ ![switch-case flowchart](https://github.com/tedy-art/C-Programming-Language/blob/main/switch-case-in-c.png)
